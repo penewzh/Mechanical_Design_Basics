@@ -1,0 +1,33 @@
+\begin{figure}
+	\centering
+	\includegraphics[width=1.0\textwidth]{graphic/1.pdf} %1.jpg是图片文件的相对路径
+	\label{img} %此处的label相当于一个图片的专属标志，目的是方便上下文的引用
+\end{figure}
+
+\begin{flushleft}
+	\zihao{4}
+	\hspace{5cm}{\heiti{题目：}}     
+	{\kaishu\underline{\hspace{1.5cm}\textbf{space}\hspace{1.5cm}}}       \\
+	\vspace{10bp}
+	
+	\hspace{5cm}{\heiti{姓名：}}      
+	{\kaishu\underline{\hspace{1.5cm}\textbf{space}\hspace{1.5cm}}}    \\
+	\vspace{10bp}
+	
+	\hspace{5cm}{\heiti{专业：}}     
+	{\kaishu\underline{\hspace{1.5cm}\textbf{space}\hspace{1.5cm}}}		 \\
+	\vspace{10bp}
+	
+	\hspace{5cm}{\heiti{学院：}}
+	{\kaishu\underline{\hspace{1.5cm}\textbf{space}\hspace{1.5cm}}}     \\
+	\vspace{10bp}
+	
+	\hspace{5cm}{\heiti{学号：}}
+	{\kaishu\underline{\hspace{1.5cm}\textbf{space}\hspace{1.5cm}}}      \\
+	\vspace{10bp}
+	
+	\hspace{5cm}{\heiti{指导教师：}}
+	{\kaishu\underline{\hspace{1.5cm}\textbf{space}\hspace{0.5cm}}}      \\
+	\vspace{10bp}
+	
+\end{flushleft}

@@ -1,0 +1,157 @@
+\section{齿轮零件的设计计算\cite{杨可桢}}
+
+\subsection{高速级齿轮计算}
+\begin{tabular}{p{32em}|p{5em}}
+    \hline
+    计算及说明&结果\\
+    \hline
+    高速级齿轮传动设计& \\
+    $p=10.97kW,n=975r/min,T=1.07\times 10^5N\cdot mm,u=4.8$&\\
+    1.选择齿轮材料、精确等级和确定需用应力 &\\
+    (1)齿轮材料& \\
+
+    小齿轮选用$20CrMnTi$,渗碳淬火，$HBS=59$&\\
+    $[\sigma_H]=1500MPa,[\sigma_{FE}]=850MPa$&\\
+
+    大齿轮选用$20Cr$，渗碳淬火，$HBS =59$&\\
+    $[\sigma_H]=1500MPa,[\sigma_{FE}]=850MPa$&\\
+
+    (2)选用7级精度 &\\
+    
+    2.选择齿轮的参数 & \\
+    小齿轮的齿数$z_1=24$&$z_1=24$\\
+    大齿轮的齿数$z_2=u\times z_1=115.2$&$Z_2=116$\\
+    初选螺旋角$\beta = 15^\circ$&$\beta =15^\circ$\\
+    一般可靠度$S_H= 1,S_F =1.25,Z_E = 189.8\sqrt[2]{MPa}$& \\
+    齿宽系数$\phi_d=0.8$& \\
+
+    3.按齿轮弯曲强度进行计算 &\\
+    计算齿形系数$Z_{v}=\frac{z}{(cos \beta)^3}$ & $z_{v1}=21.08$\\
+                         &$z_{v2}=128$\\
+
+    查表得$Y_{Fa1}=2.88,Y_{Fa2}=2.22,Y_{Sa1}=1.57,Y_{Sa2}=1.80$&\\
+    计算$\mu =\frac{Y_{Fa}{Y_Sa}}{[\sigma_F]}$& $\mu_1=0.0095$,$\mu_2=0.0084$\\
+
+    进行弯曲强度计算& \\
+    法向模数 $m_n\geq\sqrt[3]{\frac{2KT}{\phi_d z_1^2}\cdot\frac{Y_{Fa}Y_{Sa}}{[\sigma_{F1}]}\cdot(cos \beta)^2}$&\\
+
+    $=\sqrt[3]{\frac{2\times 1.1\times 1.07\times 10^5}{0.8\times 24^2}\times 0.0095 \times (cos 15^\circ)^2}=1.67$& $m_n = 2mm$\\
+
+    中心距$a=\frac{m_n\times (z_1+ z_2)}{2(cos \beta)}=\frac{2\times (24+116)}{2\times (cos15^\circ)}$&$a=145mm$\\
+
+    螺旋角 $\beta =arccos(\frac{m_n(z_1+ z_2)}{2a})=arccos(\frac{2\times (19+92)}{2\times 115})=15^\circ 9'21''$&$\beta =15^\circ 9'21''$\\
+
+    分度圆直径$d=\frac{m_n z}{cos \beta}$&$d_1=49.73mm$,$d_2=240.4mm$\\
+
+    齿宽 $b=\phi_d d_1=0.8\times 49.73=39.78mm$&\\
+    圆整取$b_1=45mm,b_2=40mm$&\\
+    齿顶圆直径$d_1=53.7mm,d_2=244.4mm$
+
+    4.验算齿面接触强度&\\
+    将参数带入得&\\
+    $\sigma_H =3.54Z_E Z_\beta\sqrt{\frac{KT}{bd_1^2}\frac{u+1}{u}}$& $\sigma_{H1}=790MPa<[\sigma_{H1}]$\\
+    \hline
+\end{tabular}
+\newpage
+\begin{tabular}{p{32em}|p{5em}}
+    \hline
+    & $\sigma_{H2}=455MPa<[\sigma_{H2}]$\\
+    5.齿轮圆周速度$v=\frac{\pi d_1 n_1 }{60 \times 1000}=\frac{\pi\times 49.73\times 975}{60000}m/s =2.54m/s$& $v = 2.54m/s$\\
+    \hline
+\end{tabular}
+
+\subsection{低速级齿轮计算}
+\begin{tabular}{p{32em}|p{5em}}
+    \hline
+    计算及说明 & 结果\\
+    \hline
+    低速级齿轮传动设计 & \\
+    $p = 10.53kW, n= 203.15r/min,T=4.95\times 10^5 N\cdot mm,u = 2.5$ & \\
+    1.选择齿轮材料、精度等级和确定许用应力 & \\
+    (1)齿轮材料 & \\
+
+    小齿轮选用$40Cr$,表面淬火，$HRC = 48\sim 55$ & \\
+    $\sigma_H=1180MPa,\sigma_{FE}=720MPa$& \\
+    大齿轮选用$45$钢，表面淬火，$HRC =40\sim 50$ & \\
+    $\sigma_H=1135MPa,\sigma_{FE}=690MPa$& \\
+
+    (2)选用7级精度 & \\
+
+    2.选择齿轮的参数 & \\
+    小齿轮的齿数$z_1=19$ &$z_1 =19$ \\
+    大齿轮的齿数$z_2=i\times z_1=47.5$,取$z_2=48$ & $z_2=48$\\
+
+    3.按齿根弯曲疲劳强度设计 & \\
+    (1)由一般可靠度，齿轮双向传动，选择$S_H = 1,S_F = 1.25,K=1.1$,齿宽系数$\phi_d=0.4$& \\
+    
+    计算$[\sigma_{F}]=\frac{0.7\sigma_{FE}}{S_F}$ & $[\sigma_{F1}]=403.2MPa$\\ 
+                    &$[\sigma_{F2}]=386.4MPa$\\
+
+    $[\sigma_{H}]=\frac{\sigma_{H}}{S_H}$ & $[\sigma_{H1}]=1180MPa$\\ 
+                    &$[\sigma_{H2}]=1135MPa$\\
+
+    查表得$Y_{Fa1}=2.98,Y_{Fa2}=2.38,Y_{Sa1}=1.55,Y_{Sa2}=1.69$ & \\
+
+    分别计算$\frac{Y_{Fa}\cdot {Y_Sa}}{[\sigma_H]}$ & 分别得到$0.0115,0.0104$\\
+
+    计算$m \geq \sqrt[3]{\frac{2KT}{\phi_d z_1^2}\cdot \frac{Y_{Fa}Y_{Sa}}{[\sigma F]}}$ & $m\geq4.43$,取$m=5$\\
+
+    中心距$a = \frac{m(z_1 + z_2)}{2} $ & $a= 134mm$\\
+
+    分度圆直径$d=zm$ &$d_1= 95mm$,$d_2=240$\\
+
+    齿宽$b=\phi d=38$&$b_1=45mm$,$b_2=40mm$\\
+    \hline
+\end{tabular}
+
+\subsection{高速级齿轮参数总结}
+\begin{tabular}{|c|c|c|}
+    \hline
+        & 小齿轮&大齿轮\\
+    \hline
+    模数$m$ & $2mm$ & $2mm$\\
+    \hline
+    齿数$z$&$24$&$116$\\
+    \hline
+    螺旋角$\beta$&右旋$15^\circ 9'21''$&左旋$15^\circ 9'21''$\\
+    \hline
+    齿宽$b$&$45mm$&$40mm$\\
+    \hline
+    分度圆直径$d$&$49.73mm$&$190.63mm$\\
+    \hline
+    齿顶高系数$h_a$&$1.0$&$1.0$\\
+    \hline
+    顶隙系数$c$&$0.25$&$0.25$\\
+    \hline
+    齿顶高$h_a$&$2mm$&$2mm$\\
+    \hline
+    齿根高$h_f$&$2.5mm$&$2.5mm$\\
+    \hline
+    全尺高$h$&$4.5mm$&$4.5mm$\\
+    \hline
+\end{tabular}
+
+\subsection{低速级齿轮参数总结}
+\begin{tabular}{|c|c|c|}
+    \hline
+        & 小齿轮&大齿轮\\
+    \hline
+    模数$m$ & $5mm$ & $5mm$\\
+    \hline
+    齿数$z$&$19$&$48$\\
+    \hline
+    齿宽$b$&$45mm$&$40mm$\\
+    \hline
+    分度圆直径$d$&$95mm$&$240mm$\\
+    \hline
+    齿顶高系数$h_a$&$1.0$&$1.0$\\
+    \hline
+    顶隙系数$c$&$0.25$&$0.25$\\
+    \hline
+    齿顶高$h_a$&$5mm$&$5mm$\\
+    \hline
+    齿根高$h_f$&$6.25mm$&$6.25mm$\\
+    \hline
+    全尺高$h$&$11.25mm$&$11.25mm$\\
+    \hline
+\end{tabular}

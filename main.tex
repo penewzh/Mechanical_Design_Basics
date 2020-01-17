@@ -1,0 +1,43 @@
+\documentclass[a4paper, UTF8,twoside]{ctexart}
+
+\usepackage{ref/main}%在这里放置需要的宏包，并设置部分所需内容
+
+\begin{document}
+
+    \pagestyle{empty}%不要页眉页脚
+    %\include{data/cover}
+
+    %\maketitle
+    \tableofcontents
+    \zihao{-4}
+    \thispagestyle{empty}%页脚不要页码
+    %“目录”两个字的样式与section的样式一致，默认居中，故将设置section标题居左放置在生成目录后
+
+    %%%%正文开始，页脚有页码
+    \cfoot{\zihao{-5}第 \ \thepage \ 页 }
+    %%%%lastpage为末页标签
+    %正文
+    \zihao{5}
+    \pagenumbering{arabic}%页码使用阿拉伯数字
+    \setcounter{page}{0}  %重新设置页码计数
+    \pagestyle{fancy}
+
+    \include{data/chapter01}
+    \include{data/chapter02}
+    \include{data/chapter03}
+    \include{data/chapter04}
+    \include{data/chapter05}
+    \include{data/chapter06}
+    \include{data/chapter07}
+    \include{data/chapter08}
+    \include{data/chapter09}
+    \include{data/chapter10}
+    \include{data/chapter11}
+
+    %参考文献
+	\kaishu
+	\bibliographystyle{plain}
+	\addcontentsline{toc}{section}{参考文献} %向目录中添加条目，以章/section的名义
+	\bibliography{ref/main.bib}
+
+\end{document}

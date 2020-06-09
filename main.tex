@@ -5,7 +5,33 @@
 \begin{document}
 
     \pagestyle{empty}%不要页眉页脚
-    %\include{data/cover}
+    
+    \begin{titlepage}
+        \heiti
+        \vspace*{64pt}
+        \begin{center}
+            
+            \begin{figure}
+                \centering
+                \includegraphics[width=1.0\textwidth]{graphic/0.jpg} %1.jpg是图片文件的相对路径
+                \label{img} %此处的label相当于一个图片的专属标志，目的是方便上下文的引用
+            \end{figure}
+    
+            \fontsize{48pt}{0}{\kaishu  机械设计基础}\\
+            \vspace*{100pt}
+        
+            \LARGE 题目\ \ \underline{\makebox[200pt]{ 机械设计基础说明书 }}\\
+            \LARGE 作者\ \ \underline{\makebox[200pt]{  }}\\
+            \LARGE 学号\ \ \underline{\makebox[200pt]{ 0617104 }}\\
+            \LARGE 学院\ \ \underline{\makebox[200pt]{材料科学与技术学院}}\\
+            \LARGE 联系方式\ \ \underline{\makebox[200pt]{  }}\\
+            \LARGE 指导老师\ \ \underline{\makebox[200pt]{  }}
+            \vspace*{120pt}
+    
+            \LARGE 时间 \ \ \makebox[200pt]{ XX年XX月 }
+    
+        \end{center}
+    \end{titlepage}
 
     %\maketitle
     \tableofcontents
